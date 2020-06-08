@@ -1,5 +1,5 @@
 package com.company;
-/* Lilly Thieberg 6/5/20 mirror progem all with loops*/
+/* Lilly Thieberg 6/8/20 challege 2 program progem all with loops*/
 public class Challenge2 {
     public static void main(String[] args) {
         Line();
