@@ -1,5 +1,5 @@
 package com.company;
-/* Lilly Thieberg 6/8/20 Modify program with constants*/
+/* Lilly Thieberg 6/8/20 Modify program with constants and integers*/
 public class ModifyProgram {
     public static final int Amount1= 38;
     public static final int Amount2= 40;
