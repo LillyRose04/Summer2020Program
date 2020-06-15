@@ -1,5 +1,5 @@
 package com.company;
-/* Lilly Thieberg 6/8/20 Modify program with constants and integers*/
+/* Lilly Thieberg 6/10/20 Modify program with constants and integers- version 2 contains some simplfied values*/
 public class ModifyProgram {
     public static final int Amount1= 38;
     public static final int Amount2= 40;
@@ -11,26 +11,20 @@ public class ModifyProgram {
         public static void main(String[] args) {
 
             // Calculate total owed, assuming 8% tax / 15% tip
-
-            System.out.println("Subtotal:");
-
-            System.out.println(Amount1 + Amount2 + Amount3);
+            double Subtotal= Amount1+Amount2+Amount3;
+            System.out.println("Subtotal: "+ Subtotal);
 
             System.out.println("Tax:");
 
-            System.out.println((Amount1 + Amount2 + Amount3) * Tax);
+            System.out.println((Subtotal) * Tax);
 
             System.out.println("Tip:");
 
-            System.out.println((Amount1 + Amount2 + Amount3) * Tip);
+            System.out.println((Subtotal) * Tip);
 
             System.out.println("Total:");
 
-            System.out.println(Amount1 + Amount2 + Amount3 +
-
-                    (Amount1 + Amount2 + Amount3) * Tip +
-
-                    (Amount1 + Amount2 + Amount3) * Tax);
+            System.out.println(Subtotal + (Subtotal) * Tip + (Subtotal) * Tax);
 
         }
 

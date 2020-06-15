@@ -1,6 +1,7 @@
 package com.company;
 /* Lilly Thieberg 6/8/20 challege 2 program progem all with loops*/
 public class Challenge2 {
+    public static final int SIZE= 5;
     public static void main(String[] args) {
         Line();
         Top();
@@ -12,21 +13,21 @@ public class Challenge2 {
     }
 
     public static void Bottom(){
-        for(int line=1;  line <5;  line++){
+        for(int line=1;  line <SIZE + 1 ;  line++){
             System.out.print("|");
-            for(int space=1;  space<= line+0;  space++){
+            for(int space=1;  space<= line ;  space++){
                 System.out.print(" ");
             }
-            for(int  dot =1; dot <=-1*line+4; dot++){
+            for(int  dot =1; dot <=-1*line+ SIZE; dot++){
                 System.out.print("\\");
             }
 
             System.out.print("*");
 
-            for(int  dot =1; dot <= -1*line+4; dot++){
+            for(int  dot =1; dot <= -1*line+ SIZE; dot++){
                 System.out.print("/");
             }
-            for(int space=1;  space<= line+0;  space++){
+            for(int space=1;  space<= line ;  space++){
                 System.out.print(" ");
             }
             System.out.println("|");
@@ -35,15 +36,15 @@ public class Challenge2 {
     }
     public static void Line(){
         System.out.print("+");
-        for(int dash=0;      dash<9;     dash++){
+        for(int dash=0;      dash< 2* SIZE+1;     dash++){
             System.out.print("-");
         }
         System.out.println("+");
     }
     public static void Top(){
-        for(int line=1;  line <5;  line++){
+        for(int line=1;  line <SIZE +1;  line++){
             System.out.print("|");
-            for(int space=1;  space<=-1*line+5;  space++){
+            for(int space=1;  space<=-1*line+ SIZE + 1;  space++){
                 System.out.print(" ");
             }
             for(int  dot =1; dot <= line-1; dot++){
@@ -55,7 +56,7 @@ public class Challenge2 {
             for(int  dot =1; dot <= line-1; dot++){
                 System.out.print("\\");
             }
-            for(int space=1;  space<=-1*line+5;  space++){
+            for(int space=1;  space<=-1*line+ SIZE + 1;  space++){
                 System.out.print(" ");
             }
             System.out.println("|");
