@@ -11,7 +11,7 @@ public class KDESIGN {
     public static void Top() {
         char letter = 65;
         for (byte line = SIZE; line >= 0; line--) { // -- BEUCASE it is decreseing in value from line to line
-            for (byte count = 0; count < line; count++) {
+            for (byte count = 0; count <= line; count++) {
                 System.out.print((char) (letter + count) + " ");
             }
             System.out.println();
