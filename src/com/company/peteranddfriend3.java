@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
+
 /* Lilly Thieberg 6/15/20 name counter name code*/
 
 public class peteranddfriend3 {
