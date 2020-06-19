@@ -4,6 +4,7 @@ public class Stringchallenge {
     public static void main(String[] args) {
     Scanner screen = new Scanner(System.in);
     String word = screen.nextLine();
+
     String even = "";
     String odd ="";
     for (int i = 0; i < word.length(); i+=2){
