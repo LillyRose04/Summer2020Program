@@ -1,61 +1,38 @@
-
 package com.company;
-// Emma Rikalo
-// 06/16/20
-// This program will take user input and add together 2 integers, then 2 doubles,
-// then concat the original string with a user given ending
-
-
-//                                   PSEUDOCODE
-//        Declare and initialize int i=4;, double d=4.0;, and String s= “Greenhill”;
-//        Create a Scanner
-//        Declare another int, double, and string
-//        Print something along the lines of “type in an integer, a double, and part of a phrase”
-//        Have the scanner read 3 lines of input,
-//        Have them correspond to the next int, next double, etc.
-//        Set the int, double, and string declared in step 3 equal to the input given in step 4
-//        Print i + int input
-//        Print d + double input (scaled to one decimal place)
-//        Print s concat string input
-
-
-import java.util.*;
-
+import java.util.Scanner;
 public class stuff {
-
+    public static Scanner Keyboard=new Scanner (System.in);
     public static void main(String[] args) {
-
-        //Declare and initialize int i=4;, double d=4.0;, and String s= “Greenhill”;
-        int i = 4;
-        double d= 4.0;
-        String s= "Greenhill ";
-
-        //Create a Scanner
-        Scanner input= new Scanner (System.in);
-
-        //Declare another int, double, and string
-        int number;
-        double decimal;
-        String words;
-
-        //Print a prompt; set int number equal to the user given integer
-        System.out.println("Type an integer: ");
-        number = input.nextInt();
-
-        //Print a prompt; set double decimal equal to the user given double
-        System.out.println("Type a double: ");
-        decimal = input.nextDouble();
-
-        //Print a prompt; set words equal to the user given phrase
-        System.out.println("Finish the phrase: Greenhill... ");
-        words = (input.next() + input.nextLine());
-
-        //a line break to separate the input section and output section when the program runs
-        System.out.println();
-
-        //Print the final outcomes of all the math/ concat
-        System.out.println(i + number);
-        System.out.printf("%.1f \n", (d + decimal));
-        System.out.println(s.concat(words));
+       /*
+       Ashton Higgins
+       First I am going to import and set up my scanner
+       Then I will declare an integer
+       Declare a double
+       And declare a string
+       I will then ask for a number, then a second number, and then the person's favorite lunch place (as a string)
+       I will add my integer with the number (integer) that I asked for into a new integer variable
+       Then I will add my double number with the second number I asked for and add them to make a new double variable
+       Lastly, I will put my string (after) with the term I was given in the scanner and make a new string variable
+       to make a complete statement
+       I will then print the new integer variable
+       Then print the new double variable
+       And then the new string statement
+       The system is complete once all three new lines are printed!
+       */
+        int num1= 4;
+        double doubley1= 4.0;
+        String statement1= "is my favorite place to have lunch";
+        System.out.print("Type a whole number: ");
+        int integer= Keyboard.nextInt();
+        System.out.print("Type any number: ");
+        double number= Keyboard.nextDouble();
+        System.out.print("Where is your favorite place to have lunch? Your answer: ");
+        String lunch= Keyboard.nextLine();
+        int variablename= integer+num1;
+        double variable= doubley1+number;
+        String stringname= statement1+lunch;
+        System.out.println(variablename);
+        System.out.println(variable);
+        System.out.println(stringname);
     }
 }
