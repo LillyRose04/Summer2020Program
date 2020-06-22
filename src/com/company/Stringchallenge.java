@@ -36,7 +36,7 @@ public class Stringchallenge {
         do {
             System.out.println("How many words will you input (must be between 1 and 10)");
             T = screen.nextInt(); // takle what was inputed as T
-        } while (T < 1 || T >= 10); // must be between the 2 number in not then it will ask the user again
+        } while (T < 1 || T > 10); // must be between the 2 number in not then it will ask the user again
 
         for (int i = 1; i <= T; i++) { // number of times it will ask you to input words
             do {
