@@ -4,7 +4,7 @@ import java.util.*;
 /*
 pusedo code;
 make a randim
-get a random number for the suze of you string bewteen five and ten
+get a random number for the suze of you string between five and ten
 make a new inter for you number eqaul to the a new inter with the size
 make a for loop fopr the numbers and make the number randomized with a limmit at one hundred for int
 make e new intergers for the switched numbers places
