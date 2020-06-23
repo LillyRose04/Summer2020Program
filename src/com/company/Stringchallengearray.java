@@ -6,7 +6,11 @@ import java.util.Scanner;
 Lilly Thieberg 6/21/2020
 import scanner
 initalize scanner
-declare t as my varible int eqaul to 10
+declare t as my varible for number of words
+open a do statment
+ask them in input a number between 1 and 10
+give T qith next screen as the varible that was inputted
+clos do and say while for t between 1-10 so that is they input a number a value not between the constants they have to input a new one
 make an array = to srting[t]
 ask them to input a word more then 5 charters long
 make an index ( in a for loop)nor a varible i that will index the array
@@ -31,7 +35,11 @@ then return awnser
 public class Stringchallengearray {
     public static void main(String[] args) {
         Scanner screen = new Scanner(System.in);
-        int T = 10;
+        int T;
+        do {
+            System.out.println("How many words will you input (must be between 1 and 10)");
+            T = screen.nextInt(); // takle what was inputed as T
+        } while (T < 1 || T > 10); // must be between the 2 number in not then it will ask the user again
         String[] word = new String[T]; // this is the declaration =of an array that will collect the words inputed evutally
         System.out.println("input a word (at least 5 charters please)");
         for (int i = 0; i < word.length; i++) { // this given the index of the array and intilizes it wil the ++
